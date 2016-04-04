@@ -1,0 +1,129 @@
+body
+	margin 0
+	padding 0
+	font 14px "Lucida Grande", Helvetica, Arial, sans-serif
+	overflow hidden
+
+#chat-bar
+	position fixed
+	left 1rem
+	bottom 1rem
+	width calc(100vw - 100px - 3rem)
+	z-index 1
+
+#page-content
+	height 80vh
+	width calc(100vw - 290px - 3rem)
+	position fixed
+	overflow-y auto
+	top 10vh
+	left 190px
+	z-index 1
+
+#page-content[data-page='experience']
+	h3, h5
+		margin 0
+	.list.jobs, .list.schools
+		margin-left 2rem
+	.item.school
+		margin-bottom 1rem
+
+#page-content[data-page='index']
+	font-size 20px
+	text-align center
+	h1.logo
+		font-size 6.5rem
+		white-space nowrap
+
+#page-content[data-page='whoiam']
+	img.christy
+		float right
+		margin-left 1rem
+
+#page-content[data-page='mywork']
+	img
+		max-width 300px
+		margin 0 1rem 1rem 0
+		vertical-align top
+
+#page-nav
+	font-size 1.5rem
+	position fixed
+	margin 0
+	top 1rem
+	left 1rem
+	z-index 1
+	width 150px
+	> .item
+		border-radius 0 !important
+		margin 0
+		padding .4rem 1rem
+		&:hover
+			background none
+		&.active
+			color white
+			background rgb(0,181,173)
+
+#play-area
+	height 300px
+	position fixed
+	top 0
+	left 0
+	height 100vh
+	width calc(100vw - 100px)
+	.player
+		background red
+		border-radius 5px
+		height 10px
+		position absolute
+		width 10px
+		z-index 2
+
+#stats
+	background rgba(0,0,0,.8)
+	color white
+	width 100px
+	margin-top 0
+	height 100vh
+	position fixed
+	top 0
+	right 0
+	.item
+		border 1px sold red
+		padding 1rem 0
+		text-align center
+	.ui.statistic
+		> .label
+			color white
+			font-size .7rem
+		> .value
+			color white
+			font-size 2.3rem
+
+#video-bk
+	opacity .2
+	width 100vw
+	height 100vh
+	overflow hidden
+	min-width 100%
+	min-height 100%
+	width auto
+	height auto
+
+@media (max-width:400px)
+	#chat-bar
+		width calc(100vw - 100px - 4rem)
+		.text
+			display none
+	#page-content
+		font-size 1rem
+		top 0
+		left 0
+		padding 1rem
+		width calc(100vw - 100px)
+		height calc(100vh - 100px)
+	#page-content[data-page='index']
+		h1.logo
+			font-size 3rem
+	#page-nav
+		display none

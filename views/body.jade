@@ -1,0 +1,39 @@
+nav.ui.secondary.vertical.menu#page-nav
+	a.item.active(data-page='index') Home
+	a.item(data-page='mywork') My Work
+	a.item(data-page='experience') Experience
+	a.item(data-page='whoiam') Who I Am
+	a.item(data-page='contactme') Contact Me
+#page-content
+#play-area
+	#chat-bar.ui.action.input
+		input(type='text', placeholder='Use the ARROW keys to move around and type in this box to say something')
+		button.ui.teal.right.labeled.icon.button
+			i.send.icon
+			span.text Send
+#stats.ui.divided.list
+	.item
+		.content
+			.ui.statistic(data-id='keysPressed')
+				.label Keys Pressed
+				.value 0
+	.item
+		.content
+			.ui.statistic(data-id='linksActivated')
+				.label Links Activated
+				.value 0
+	.item
+		.content
+			.ui.statistic(data-id='messagesSent')
+				.label Messages Sent
+				.value 0
+	.item
+		.content
+			.ui.statistic(data-id='timeOnSite')
+				.label Time On Site
+				.value 0:00
+	.item
+		.content
+			.ui.statistic(data-id='users')
+				.label Users
+				.value 1

@@ -1,0 +1,18 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00b7ff;
+}
+#play-area {
+  border: 1px solid #f00;
+  height: 300px;
+}
+#play-area .player {
+  border: 1px solid #f00;
+  border-radius: 5px;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+}
